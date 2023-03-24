@@ -1,6 +1,11 @@
 <template>
 <div class="header">
   <div class="logo"><a href="/"><img src="../assets/logo2.png"/></a></div>
+  <div class="dropdown" :class="{'change':isActive}" @click="isActive = !isActive">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
   <div class="header-items"><RouterLink to="/"> Home </RouterLink></div>
   <div class="header-items"><RouterLink to="#"> About Me </RouterLink></div>
   <div class="header-items"><RouterLink to="#"> CV </RouterLink></div>
@@ -16,9 +21,15 @@
 
 <script>
 export default{
+  data(){
+    return {isActive: false,};
+  },
   name:'Header'
-}</script>
+  
+  }
 
+
+</script>
 <style>
 @media only screen and (min-width:1200px) {
 
@@ -96,7 +107,18 @@ a:-webkit-any-link{
   margin-top:-15px;
   margin-right:20%;
 }
-
+.dropdown {
+  display:none;
+}
+.bar1 {
+  display:none;
+}
+.bar2 {
+  display:none;
+}
+.bar3 {
+  display:none;
+}
 
 
 
@@ -177,7 +199,18 @@ a:-webkit-any-link{
   margin-top:-15px;
  
 }
-
+.dropdown {
+  display:none;
+}
+.bar1 {
+  display:none;
+}
+.bar2 {
+  display:none;
+}
+.bar3 {
+  display:none;
+}
 
 
 
@@ -195,72 +228,40 @@ a:-webkit-any-link{
   justify-content: space-between;
 }
 .signin{
-  display:none;
-  float:right;
-  margin-right:20px;
-  text-decoration:none !important ;
-  font-size: 20px;
-  padding-top:10px;
-  font-family:'Times New Roman', Times, serif;
-  
+  display:none;  
 } 
-.sign-in::after{
-  content: '';
-  position:absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #ca4a00;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-  margin-bottom:30px;
-}
-.sign-in:hover::after{
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
 a:-webkit-any-link{
     text-decoration: none !important;
     color:rgb(255, 244, 246);
 }
 .header-items{
-  font-family:'Times New Roman', Times, serif;
-  font-size:20px;
-  margin: 10px 0px 0px -5%;
   display: none;
-  
-  color: #006091;
- 
 }
-.header-items::after{
-  content: '';
-  position:absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #ca4a00;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-  margin-bottom:30px;
-}
-.header-items:hover::after{
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
+
 .logo{
   float:left;
   margin-top:-15px;
- 
+}
+}
+.dropdown {
+  display: inline-block;
+  cursor: pointer;
 }
 
-
-
-
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 }
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);}
 </style>
