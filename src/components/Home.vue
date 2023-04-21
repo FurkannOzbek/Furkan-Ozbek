@@ -1,23 +1,41 @@
 <script>
 import Header from './Header.vue'
+import Loader from './Loader.vue'
+
 export default{
     name:'Home',
-    components: {
-        Header
+    data() {
+        return {
+            isLoading:true,
+        };
     },
-}</script>
+    components: {
+        Header,
+        Loader,
+    },
+    mounted() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1500);
+  }
+}
+    </script>
 
 <template>
-    <div><Header /></div>
-    <section class="content">
-        
-         <div class="fadetext" style="transition-delay:100ms;"><h1>Hi, my name is</h1>  </div>
-         <div class="fadetext" style="transition-delay:200ms;"><h2>Furkan Özbek</h2>  </div>
-         <div class="fadetext" style="transition-delay:300ms;"><h3>I love build websites</h3>  </div>
-         <div class="fadetext" style="transition-delay:400ms;"><p>I am a computer engineer with desire to design. Currently I am looking for a job, if you would like to contact please hit the button! </p>  </div>
-         <button class="contact" > Contact Me</button> 
+
+    <div > <Loader v-if="isLoading" ></Loader> fasd</div>
+    <div v-if="!isLoading"><Header/></div>
+    <section v-if="!isLoading" class="content">
+          
+         <div class="fadetext" style="animation-delay:2600ms;"><h1>Hi, my name is</h1>  </div>
+         <div class="fadetext" style="animation-delay:2800ms;"><h2>Furkan Özbek</h2>  </div>
+         <div class="fadetext" style="animation-delay:3000ms;"><h3>I love build websites</h3>  </div>
+         <div class="fadetext" style="animation-delay:3200ms;"><p>I am a computer engineer with desire to design. Currently I am looking for a job, if you would like to contact please hit the button! </p>  </div>
+         <button class="contact" style="animation-delay:3400ms;" > Contact Me</button> 
          
 </section>
+
+
 </template>
 
 <style>
@@ -40,13 +58,21 @@ section {
     padding: 100px 0px;
     max-width: 1000px;}
 .fadetext{
-   
+   animation:slide 1s forwards;
+   animation-delay: 500ms;
+   opacity:0;
 
+
+}
+@keyframes slide {
+  0% { top: -100px; opacity: 0%; }
+  100% { top: 0px; opacity:100%; }
 }
 h1{
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     font-size:clamp(14px,5vw,16px);
     color:#64ffda;
+    
 }
 h2{
     font-size:clamp(40px,8vw,80px);
@@ -76,6 +102,9 @@ p{
    margin-top:20px;
       font-size:13px;
       transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+      animation:slide 1s forwards;
+   animation-delay: 500ms;
+   opacity:0;
 }
 </style>
 

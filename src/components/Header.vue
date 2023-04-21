@@ -10,11 +10,11 @@
   </div>
   <div class="header-item">
     <ol>
-      <RouterLink to="/"><li class="header-items" :class="{'header-items-none':!isActive}"> About Me </li></RouterLink>
-      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}"> Experience </li></RouterLink>
-      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}"> Skills </li></RouterLink>
-      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}"> Contact </li></RouterLink>
-      <button class="cv" :class="{'cv-none':!isActive}"> Resume</button> 
+      <RouterLink to="/"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:300ms;">About Me </li></RouterLink>
+      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:600ms;"> Experience </li></RouterLink>
+      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:900ms;"> Skills </li></RouterLink>
+      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:1200ms;"> Contact </li></RouterLink>
+      <button class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;"> Resume</button> 
       
       
   </ol>
@@ -79,6 +79,7 @@
     
   }
   .header1{
+    
     padding-top:10px;
     top:0;
     align-items: center;
@@ -90,7 +91,7 @@
     text-decoration:none !important ;
     scroll-behavior: smooth;
     justify-content: space-between;
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.2 ease-in;
    
     
   }
@@ -105,7 +106,7 @@
     text-decoration:none !important ;
     scroll-behavior: smooth;
     justify-content: space-between;
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition:all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);;
     transform: translateY(0px);
     
@@ -134,11 +135,15 @@
  }
   .header1 ol li {
     padding:15px;
+    transition:all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition-delay:3s;
+    
     
   }
   .header1up ol li {
     padding:15px;
     margin-top:10px;
+    
   }
   div.header-item{
     position:flex;
@@ -147,6 +152,10 @@
     
   }
   .cv {
+    transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+      transition: 3.2s;
+    
       color: #64ffda;
       background-color: transparent;
       border: 1px solid #66ffdb;
@@ -156,9 +165,11 @@
       line-height: 1;
       text-decoration: none;
       cursor: pointer;
-      transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);;
+      animation:slide 1s forwards;
+   animation-delay: 500ms;
       margin-left: 15px;
       font-size:13px;
+      opacity:0;
   }
   a:-webkit-any-link{
       text-decoration: none !important;
@@ -169,7 +180,9 @@
     font-size:13px;
     display:inline-block;
     margin-top:20px;
-   
+    animation:slide 1s forwards;
+   animation-delay: 500ms;
+   opacity:0;
     }
     
   
