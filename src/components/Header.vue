@@ -1,5 +1,5 @@
 <template>
-  <header id=header1 class="header1up">
+  <header id=header1 class="header1">
   <div class="logo">
     <a class="logo1" href="/"><img src=""/></a>
       <a class="dropdown1" :class="{'change':isActive}" @click="isActive = !isActive">
@@ -45,7 +45,7 @@
        if (scrollY < this.startY){
         d.className= ("header1up")
       }
-      if (scrollY===0){
+      if (scrollY === 0){
         d.className= ("header1")
       }
      
@@ -91,7 +91,7 @@
     text-decoration:none !important ;
     scroll-behavior: smooth;
     justify-content: space-between;
-    transition: all 0.2 ease-in;
+     transition:all 0.25s cubic-bezier(0.645,0.045,0.355,1);
    
     
   }
