@@ -10,11 +10,12 @@
   </div>
   <div class="header-item">
     <ol>
-      <RouterLink to="/"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:300ms;">About Me </li></RouterLink>
-      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:600ms;"> Experience </li></RouterLink>
-      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:900ms;"> Skills </li></RouterLink>
-      <RouterLink to="#"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:1200ms;"> Contact </li></RouterLink>
-      <button class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;"> Resume</button> 
+      <a href="#About"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:300ms;">About Me </li></a>
+      <a href="#jobs"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:600ms;">Experience </li></a>
+      <a href="#pskills"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:900ms;">Skills</li></a>
+      <a href="#contact1"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:1200ms;">Contact </li></a>
+      
+      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\resume.pdf"  target=”_blank”> Resume</a>
       
       
   </ol>
@@ -67,7 +68,7 @@
   @media only screen and (min-width:900px) {
   
     body {
-    counter-reset: item; /* Set a counter named 'item', and its initial value is 0. */
+    counter-reset: item section section2; /* Set a counter named 'item', and its initial value is 0. */
     display: block;
   }
   header{
@@ -77,6 +78,20 @@
     z-index:1000;
     
     
+  }
+  .cv:hover {
+    background-color:#64ffda;
+    
+    color:rgb(44, 42, 42);
+    border: 1px solid #3b3d3d;
+    transition:ease-in 0.5s;
+  }
+  .cv a:hover {
+    background-color:#64ffda;
+    
+    color:rgb(44, 42, 42);
+    border: 1px solid #3b3d3d;
+    transition:ease-in 0.5s;
   }
   .header1{
     
@@ -136,7 +151,7 @@
   .header1 ol li {
     padding:15px;
     transition:all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    transition-delay:3s;
+    
     
     
   }
@@ -154,23 +169,30 @@
   .cv {
     transition-timing-function: linear;
     transition-timing-function: cubic-bezier(0, 0, 1, 1);
-      transition: 3.2s;
+      transition: 0.5s;
     
       color: #64ffda;
       background-color: transparent;
       border: 1px solid #66ffdb;
       border-radius: 4px;
-      padding: 0.75rem 1rem;
+      padding: 0.75rem 0.75rem;
       font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
       line-height: 1;
       text-decoration: none;
       cursor: pointer;
       animation:slide 1s forwards;
-   animation-delay: 500ms;
-      margin-left: 15px;
+      animation-delay: 500ms;
+      
       font-size:13px;
       opacity:0;
   }
+  button:hover{
+    background-color:#64ffda;
+    
+    color:rgb(44, 42, 42);
+    border: 1px solid #3b3d3d;
+    transition:ease-in 0.5s;
+   }
   a:-webkit-any-link{
       text-decoration: none !important;
       color:rgb(255, 244, 246);
@@ -208,6 +230,10 @@
     transition: transform 0.25s ease-out;
     
   }
+  .header-items:hover{
+    
+    color:#66ffdb
+  }
   .header-items:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -241,7 +267,9 @@
     
   
   }
+  
   .header1{
+   
     align-items: center;
     display:block;
     overflow:hidden;
@@ -254,16 +282,8 @@
     
   }
   .header1up{
-    align-items: center;
-    display:block;
-    overflow:hidden;
-    padding-bottom:20px;
-    padding-top:20px;
-    background-color: #212529;
-    text-decoration:none !important ;
-    font-size:150%;
-    justify-content: space-between;
-    box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);;
+    display:none;
+    
     
   }
   .header1down{
@@ -299,14 +319,14 @@
  
 
   .header-items{
-    color: white;
+    color: #66ffdb;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display:block;
-  
     container-type:inline-size;
     text-align:center;
+    margin-bottom:5px;
     
     
   }
@@ -344,7 +364,7 @@
     
   }
   .logo1{
-    width:auto;
+   
     margin-top:-15px;
     display: flex;
     clear:both;
@@ -386,4 +406,10 @@
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);}
   
+    a:-webkit-any-link:hover {
+      
+      transition-delay: 0s;
+      color:66ffdb;
+    }
+   
   </style>
