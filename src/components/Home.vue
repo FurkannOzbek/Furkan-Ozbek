@@ -103,18 +103,23 @@ export default{
     <div class="inner">
         <div>
             
- <p> Hello, My name is Furkan and I really love design websites. My interest in web development started back in 2014 when I have designed some few website for the people who is close to me. At those times I were using 
-    wordpress ready themes and with custom css I were designing. Then I have met with Javascript and Vue.js and started to code my websites from scracth.
+ <p> Hello, my name is Furkan, and I have a passion for designing websites. My journey in web development began in 2014 when I created a few websites for people close to me. At that time, I primarily used WordPress ready themes and customized them with CSS to achieve unique designs.
+
+Eventually, I discovered JavaScript and Vue.js, which inspired me to start coding my websites from scratch, allowing for greater creativity and functionality. <br>
+
+<span style="color:#64FED9;">Currently, I am about to complete an 8-month web development bootcamp at HackYourFuture, where I have honed my skills and deepened my understanding of modern web technologies. I'm excited to continue exploring the world of web development and creating innovative online experiences!</span>
  </p>
  <p> 
     Here are some methods I am familiar with:
  </p>
 
 <ul class="skills1">
-    <li> HTML</li>
-    <li> CSS</li>
-    <li> Javascript</li>
-    <li> Vue.js</li>
+    <li> React</li>
+    <li> Javascript - HTML - CSS </li>
+    <li> Vue</li>
+    <li> NextJS</li> 
+    <li> NodeJS</li>
+    <li> Git</li>
    
 </ul>
 </div>
@@ -125,14 +130,14 @@ export default{
     <h2 class="numberheading"> Work Experience</h2>
     <div class="inner">
         <div id="tablist" class="joblist">
-            <button id="tab1"    class="jobtabothers" v-on:click="asd('tab11')"> <span> C2Tech </span></button>
+            <button id="tab1"    class="jobtabothers" v-on:click="asd('tab11')"> <span> KFC </span></button>
             <button id="tab2"    class="jobtabothers"   v-on:click="asd('tab22')">    <span > Alya Boutique Hotel </span></button>
-            <button id="tab3"    class="jobtabothers"   v-on:click="asd('tab33')">   <span> KFC </span></button>
+            <button id="tab3"    class="jobtabothers"   v-on:click="asd('tab33')">   <span> C2Tech</span></button>
             <div id="followline" class="followlinetab1"></div>
             
         </div>
         <div class="worktext">
-<div id="tab11" class="tab"> <h3> 
+<div id="tab33" class="tab"> <h3> 
     <span>Technical Sales Engineer</span> 
     <span class="company"> @ C2Tech </span>
 </h3>
@@ -141,39 +146,42 @@ export default{
 </p> 
 <div>
     <ul>
-        <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing</li>
-        <li>Lorem Ipsum is simply rised in</li>
-        <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</li>
-        <li>as</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Technical Sales:</span> Developed skills in selling crypto hardware solutions, understanding customer needs, and tailoring presentations to meet those needs.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Technical Support:</span> Provided troubleshooting and technical assistance to customers, strengthening problem-solving skills and product knowledge.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Installation Guidance:</span> Developed skills in guiding customers through the installation process, ensuring a smooth setup and optimal product performance.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Presentation Skills:</span> Improved presentation and communication skills by delivering product demonstrations and technical explanations to clients.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Time Management:</span> Enhanced organizational skills by balancing technical support tasks with sales responsibilities in a fast-paced environment.</li>
     </ul> </div></div>
     <div id="tab22" class="tab" style="display:none"> <h3> 
     <span>Internal IT Support</span> 
     <span class="company"> @ Alya Boutique Hotel </span>
 </h3>
 <p class="distance">
-    Date 2131 - 1200
+    June 2018 - September 2020
 </p> 
 <div>
     <ul>
-        <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing</li>
-        <li>Lorem Ipsum is simply rised in</li>
-        <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</li>
-        <li>as</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Website Design: </span>Developed skills in website design and management, improving online presence and user engagement for the hotel.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Network Installation: </span>Acquired hands-on experience in setting up and configuring network systems, enhancing the hotel's IT infrastructure.</li>
+       <li> <span style="font-weight:bold;color:#64FED9;">Customer Service Excellence:</span> Enhanced communication and interpersonal skills by assisting guests with inquiries and resolving issues promptly.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Substitute Manager:</span> Gained leadership experience by stepping in for the manager, overseeing staff, and maintaining service quality during their absence.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Technical Troubleshooting:</span> Strengthened problem-solving skills through hands-on experience in addressing technical issues related to IT systems and guest services.</li>
     </ul> </div></div>
-    <div id="tab33" class="tab" style="display:none"> <h3> 
+    <div id="tab11" class="tab" style="display:none"> <h3> 
     <span> Shiftleader </span> 
     <span class="company"> @ KFC </span>
 </h3>
 
 <p class="distance">
-    Date 2131 - 1200
+    May 2022 - May 2024
 </p> 
 <div>
     <ul>
-        <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing</li>
-        <li>Lorem Ipsum is simply rised in</li>
-        <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</li>
-        <li>as</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Problem-Solving:</span> Developed critical thinking skills by addressing unexpected challenges during shifts, such as staffing shortages or equipment issues.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Customer Service Excellence:</span> Enhanced ability to address customer inquiries and resolve complaints effectively, ensuring a positive dining experience.      </li>
+        <li><span style="font-weight:bold;color:#64FED9;">Time Management:</span> Mastered prioritizing tasks and managing time effectively during peak hours to maintain service quality.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Operational Efficiency:</span> Gained insights into managing inventory, food preparation, and service processes to optimize efficiency.</li>
+        <li><span style="font-weight:bold;color:#64FED9;">Training and Development: </span>Experience in training new employees on procedures, customer service standards, and food safety protocols.</li>
     </ul> </div></div>
 
 </div>
@@ -192,10 +200,11 @@ export default{
 </div>
 
 <div id="graphs" class="graphs"> 
-    <li class="graphsli"><h3> HTML and CSS </h3> <span class="bar"><span class="html"></span></span> </li>
-    <li class="graphsli"><h3> Javascript and Vue </h3> <span class="bar"><span class="java"></span></span> </li>
-    <li class="graphsli"><h3> MS Office and OS </h3> <span class="bar"><span class="ms"></span></span> </li>
+    <li class="graphsli"><h3> React </h3> <span class="bar"><span class="react"></span></span> </li>
+    <li class="graphsli"><h3> Vue </h3> <span class="bar"><span class="vue"></span></span> </li>
+    <li class="graphsli"><h3> Javascript, HTML & CSS</h3> <span class="bar"><span class="ms"></span></span> </li>
     <li class="graphsli"><h3> Network </h3> <span class="bar"><span class="net"></span></span> </li>
+    <li class="graphsli"><h3> MS Office and OS </h3> <span class="bar"><span class="net"></span></span> </li>
 
 </div>
 
@@ -615,14 +624,14 @@ li.graphsli{
 	background-color: #64ffda;
   
 }
-.html{ /*set skills and animation of html*/
+.react{ /*set skills and animation of html*/
    
 	width: 80%;
 	animation:html 5s;
 }
 
-.java{ /*set skills and animation of css*/
-	width: 53%;
+.vue{ /*set skills and animation of css*/
+	width: 43%;
 	animation: java 5s;
 }
 
