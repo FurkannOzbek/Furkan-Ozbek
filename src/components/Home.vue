@@ -105,7 +105,7 @@ export default{
             
  <p> Hello, my name is Furkan, and I have a passion for designing websites. My journey in web development began in 2014 when I created a few websites for people close to me. At that time, I primarily used WordPress ready themes and customized them with CSS to achieve unique designs.
 
-Eventually, I discovered JavaScript and Vue.js, which inspired me to start coding my websites from scratch, allowing for greater creativity and functionality. <br>
+    <br><br>Eventually, I discovered JavaScript and Vue.js, which inspired me to start coding my websites from scratch, allowing for greater creativity and functionality. <br><br>
 
 <span style="color:#64FED9;">Currently, I am about to complete an 8-month web development bootcamp at HackYourFuture, where I have honed my skills and deepened my understanding of modern web technologies. I'm excited to continue exploring the world of web development and creating innovative online experiences!</span>
  </p>
