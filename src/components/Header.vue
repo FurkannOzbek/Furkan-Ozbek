@@ -17,7 +17,7 @@
       
       <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\resume.pdf"  target=”_blank”>Resume</a>
       <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1800ms;" href="\src\assets\vurdering.pdf"  target=”_blank”>Vurdering</a>
-      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:2000ms;" href="\src\assets\soft.pdf"  target=”_blank”>Soft Skills</a>
+      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:2000ms;" href="\src\assets\softskills.pdf"  target=”_blank”>Soft Skills</a>
       
       
   </ol>
