@@ -15,7 +15,9 @@
       <a href="#pskills"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:900ms;">Skills</li></a>
       <a href="#contact1"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:1200ms;">Contact </li></a>
       
-      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\resume.pdf"  target=”_blank”> Resume</a>
+      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\resume.pdf"  target=”_blank”>Resume</a>
+      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\vurdering.pdf"  target=”_blank”>Vurdering</a>
+      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\soft.pdf"  target=”_blank”>Soft Skills</a>
       
       
   </ol>
@@ -170,7 +172,8 @@
     transition-timing-function: linear;
     transition-timing-function: cubic-bezier(0, 0, 1, 1);
       transition: 0.5s;
-    
+      margin:0 5px 0 5px;
+      align-items: center;
       color: #64ffda;
       background-color: transparent;
       border: 1px solid #66ffdb;
@@ -308,6 +311,7 @@
       line-height: 1;
       text-decoration: none;
       cursor: pointer;
+      
       transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);;
     
       font-size:13px;
