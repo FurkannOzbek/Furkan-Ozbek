@@ -16,8 +16,8 @@
       <a href="#contact1"><li class="header-items" :class="{'header-items-none':!isActive}" style="animation-delay:1200ms;">Contact </li></a>
       
       <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\resume.pdf"  target=”_blank”>Resume</a>
-      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\vurdering.pdf"  target=”_blank”>Vurdering</a>
-      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1500ms;" href="\src\assets\soft.pdf"  target=”_blank”>Soft Skills</a>
+      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:1800ms;" href="\src\assets\vurdering.pdf"  target=”_blank”>Vurdering</a>
+      <a class="cv" :class="{'cv-none':!isActive}" style="animation-delay:2000ms;" href="\src\assets\soft.pdf"  target=”_blank”>Soft Skills</a>
       
       
   </ol>
@@ -40,8 +40,8 @@
     },
     methods: {
     handleScroll() {
-      var d = document.getElementById("header1")
-      var scrollY = window.scrollY
+      let d = document.getElementById("header1")
+      let scrollY = window.scrollY
       if (scrollY > this.startY){
         d.className =("header1down")
       }

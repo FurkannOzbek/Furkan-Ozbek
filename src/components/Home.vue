@@ -22,11 +22,11 @@ export default{
   },
   methods: {
     handleScroll() {
-      var e = document.getElementById("About")
-      var f = document.getElementById("jobs")
-      var g = document.getElementById("pskills")
+      let e = document.getElementById("About")
+      let f = document.getElementById("jobs")
+      let g = document.getElementById("pskills")
       
-      var scrollY = window.scrollY
+      let scrollY = window.scrollY
       if (scrollY > 300) {
         e.className= ("Aboutvis")
       }
@@ -39,21 +39,21 @@ export default{
      
     },
      asd(tabnumber){
-        var i;
-        var x = document.getElementsByClassName("tab");
+        let i;
+        let x = document.getElementsByClassName("tab");
         for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       
   }
   
         //reseting all the tabs after each function usage 
-        var tab1 = document.getElementById("tab1")
-        var tab2 = document.getElementById("tab2")
-        var tab3 = document.getElementById("tab3")
+        let tab1 = document.getElementById("tab1")
+        let tab2 = document.getElementById("tab2")
+        let tab3 = document.getElementById("tab3")
         tab1.className = "jobtabothers";
         tab2.className = "jobtabothers";
         tab3.className = "jobtabothers";
-        var a = event.currentTarget
+        let a = event.currentTarget
         
         if (a.className = "jobtabothers"){
             a.className = "jobtabselected"
