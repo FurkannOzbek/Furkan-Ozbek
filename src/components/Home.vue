@@ -592,9 +592,7 @@ p.prskills{
     margin-top:50px;
     max-width: 350px;
 }
-body:scope{
-    
-}
+
 li.graphsli{
     list-style-type: none;
 	font-family: sans-serif;
