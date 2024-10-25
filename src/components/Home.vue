@@ -142,7 +142,7 @@ export default{
     <span class="company"> @ C2Tech </span>
 </h3>
 <p class="distance">
-    Date 2131 - 1200
+    September 2017 - March 2018
 </p> 
 <div>
     <ul>
@@ -231,7 +231,7 @@ export default{
 </section>
 <section v-if="!isLoading" id="contact1" class="contact1">
 <div><h4 class="numberheadinglast"> Contact </h4>
-<p class="lasttext"> Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+<p class="lasttext"> My inbox is always open. Whether you have a question or just want to say hi, I’ll get back to you!</p>
 <a class="contact" style="animation-delay:100ms;" a href="mailto:furkannozbek@yandex.com?subject = Feedback&body = Message"> Contact Me</a>
 </div></section>
 <div v-if="!isLoading" class="footer">
